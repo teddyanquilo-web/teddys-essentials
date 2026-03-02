@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEDDY ESSENTIALS</title>
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  background: #111;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  color: #FFD700;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+/* HERO WITH IMAGE */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+}
+
+.hero-content button {
+  padding: 15px 35px;
+  border: none;
+  background: #FFD700;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background: white;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+}
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 230px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  background: black;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #FFD700;
+  color: black;
+}
+
+/* PROMO */
+.promo {
+  background: #FFD700;
+  padding: 60px 20px;
+}
+
+/* REVIEWS */
+.reviews {
+  background: #f0f0f0;
+}
+
+.review-box {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>TEDDY ESSENTIALS</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#promo">Promo</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Style That Speaks 🔥</h2>
+    <p>Affordable. Trendy. Made for Everyday Confidence 💰</p>
+    <button onclick="document.getElementById('shop').scrollIntoView();">
+      SHOP NOW 🛒
+    </button>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Teddy Essentials</h2>
+  <p>
+    Teddy Essentials is a modern Filipino clothing brand built for students,
+    trendsetters, and everyday hustlers. We believe you don’t need to spend big
+    to look confident and stylish.
+  </p>
+</section>
+
+<section class="section" id="shop">
+  <h2>Our Collection 👕</h2>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+      <h3>Graphic Tee</h3>
+      <p>₱399</p>
+      <button>Add to Cart 🛒</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975922324-8b456906c813">
+      <h3>Street Hoodie</h3>
+      <p>₱999</p>
+      <button>Add to Cart 🛒</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+      <h3>Cargo Pants</h3>
+      <p>₱1,299</p>
+      <button>Add to Cart 🛒</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+      <h3>Oversized Shirt</h3>
+      <p>₱499</p>
+      <button>Add to Cart 🛒</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520974735194-38b0b65fdbf6">
+      <h3>Denim Jacket</h3>
+      <p>₱1,499</p>
+      <button>Add to Cart 🛒</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="promo section" id="promo">
+  <h2>🔥 Special Promo 🔥</h2>
+  <p>Buy 2 Get 1 FREE on all Graphic Tees 👕</p>
+  <p>Free Nationwide Shipping for orders above ₱1,500 🚚</p>
+</section>
+
+<section class="section reviews" id="reviews">
+  <h2>Customer Reviews 💬</h2>
+
+  <div class="review-box">
+    ⭐⭐⭐⭐⭐  
+    <p>"Amazing quality for the price. Totally worth it!"</p>
+  </div>
+
+  <div class="review-box">
+    ⭐⭐⭐⭐⭐  
+    <p>"Perfect for students. Stylish and affordable!"</p>
+  </div>
+
+  <div class="review-box">
+    ⭐⭐⭐⭐  
+    <p>"Fast delivery and great fit 💯"</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us 📩</h2>
+  <p>Email: teddyessentials@gmail.com</p>
+  <p>Instagram: @teddyessentials</p>
+  <p>Facebook: Teddy Essentials Official</p>
+</section>
+
+<footer>
+  <p>© 2026 TEDDY ESSENTIALS | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
